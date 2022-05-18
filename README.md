@@ -46,7 +46,7 @@ Pr=list(); E=list(); xi=list()
 print("  X P(X=x) Obs.Fr  Ex.Fre   xi ")
 print("----------------------------------")
 for x in range(7):
-    Pr.append(math.exp(-mean)mean**x/math.factorial(x))
+    Pr.append(math.exp(-mean)*mean**x/math.factorial(x))
     E.append(Pr[x]*N)
     xi.append((f[x]-E[x])**2/E[x])
     print("%2.2f %2.2f  %4.2f   %3.2f  %3.2f"%(x,Pr[x],f[x],E[x],xi[x]))
@@ -63,7 +63,7 @@ else:
  
 
 # Output : 
-![Screenshot (121)](https://user-images.githubusercontent.com/75235334/166265362-48455099-b050-45d0-ae08-0149cc72d3a9.png)
+![Screenshot (8)](https://user-images.githubusercontent.com/75235334/168961932-4b072b3f-6441-403e-baf1-2e8cb8ca4ea0.png)
 
 # Result :
 Thus, the program to fit poisson distribution is implemented
